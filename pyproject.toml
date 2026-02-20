@@ -1,0 +1,16 @@
+[build-system]
+requires = ["uv_build==0.10.4"]
+build-backend = "uv_build"
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.setuptools.packages.find]
+where = ["src/"]
+include = ["rickosborne.vote"]
+
+[tool.uv.workspace]
+members = ["src/*/*"]
+
+[dependency-groups]
+dev = ["ruff==0.15.2", "pytest==9.0.2", "pytest-cov==7.0.0", "basedpyright==1.38.1"]
