@@ -36,10 +36,7 @@ def first_past_the_post[B, C: Candidate](
         candidate = get_candidate(ballot)
         votes_by_candidate[candidate] = 1 + votes_by_candidate.get(candidate, 0)
         ballot_count += 1
-    votes = [FirstPastThePostTally[C](c, 0, v) for c, v in votes_by_candidate.items()]
-    votes.sort(key=keyed_votes_desc_then_candidate_asc)
-    outcome: list[FirstPastThePostTally[C]] = sorted(
-        votes, key=keyed_votes_desc_then_candidate_asc
-    )
+    outcome = [FirstPastThePostTally[C](c, 0, v) for c, v in votes_by_candidate.items()]
+    outcome.sort(key=keyed_votes_desc_then_candidate_asc)
     fix_ranks(outcome, (lambda o: o.votes), (lambda o, r: setattr(o, "rank", r)))
     return FirstPastThePostResult(ballot_count, outcome)

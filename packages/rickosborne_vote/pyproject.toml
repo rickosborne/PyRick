@@ -1,7 +1,8 @@
 [project]
-dependencies = []
 description = "Rick Osborne's collection of voting-related utilities."
-name = "rickosborne-vote"
+name = "rickosborne_vote"
 readme = "README.md"
 requires-python = ">=3.14"
 version = "2026.2.19"
+license = "CC-BY-NC-SA-4.0"
+dependencies = []

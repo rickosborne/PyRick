@@ -5,12 +5,15 @@ build-backend = "uv_build"
 [tool.ruff.format]
 quote-style = "double"
 
-[tool.setuptools.packages.find]
-where = ["src/"]
-include = ["rickosborne.vote"]
+[tool.uv.sources]
+rickosborne_vote = { workspace = true }
 
 [tool.uv.workspace]
-members = ["src/*/*"]
+members = ["packages/*"]
 
 [dependency-groups]
 dev = ["ruff==0.15.2", "pytest==9.0.2", "pytest-cov==7.0.0", "basedpyright==1.38.1"]
+
+# I cannot figure out how to get basedpyright to see the editable imports.
+[tool.pyright]
+reportMissingTypeStubs = false

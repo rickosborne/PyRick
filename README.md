@@ -2,7 +2,7 @@
 
 These are Python ports of various packages in other languages.
 
-- `rickosborne.vote`: port of my TypeScript [@rickosborne/vote](https://npmjs.com/package/@rickosborne/vote) package.
+- `rickosborne_vote`: port of my TypeScript [@rickosborne/vote](https://npmjs.com/package/@rickosborne/vote) package.
 
 ## License
 

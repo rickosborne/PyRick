@@ -160,7 +160,7 @@ wheels = [
 [[package]]
 name = "rickosborne-vote"
 version = "2026.2.19"
-source = { virtual = "src/rickosborne/vote" }
+source = { editable = "packages/rickosborne_vote" }
 
 [[package]]
 name = "ruff"

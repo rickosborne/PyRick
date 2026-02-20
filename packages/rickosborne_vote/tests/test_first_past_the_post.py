@@ -1,4 +1,4 @@
-from ..first_past_the_post import (
+from rickosborne_vote.first_past_the_post import (
     FirstPastThePostResult,
     FirstPastThePostTally,
     first_past_the_post,
