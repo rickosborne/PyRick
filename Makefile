@@ -2,12 +2,9 @@
 test:
 	@.venv/bin/python -m pytest packages
 
-.PHONY: build-vote
-build-vote:
-	@~/.local/bin/uv build packages/rickosborne_vote
-
 .PHONY: build
-build: build-vote
+build:
+	@~/.local/bin/uv build packages/*
 
 #.PHONY: types
 #types:
