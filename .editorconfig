@@ -1,4 +1,29 @@
+[*.md]
+indent_size = tab
+indent_style = tab
+insert_final_newline = true
+tab_width = 4
+
+[*.py]
+insert_final_newline = true
+
+[*.toml]
+indent_size = tab
+indent_style = tab
+insert_final_newline = true
+tab_width = 4
+
 [*.yaml]
 indent_size = tab
 indent_style = tab
+insert_final_newline = true
 tab_width = 4
+
+[Makefile]
+indent_size = tab
+indent_style = tab
+insert_final_newline = true
+tab_width = 4
+
+[.editorconfig]
+insert_final_newline = true
