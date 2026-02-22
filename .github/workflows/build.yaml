@@ -29,4 +29,4 @@ jobs:
             -   name: "Unit tests"
                 run: "uv run pytest"
             -   name: "Build"
-                run: "uv build packages/*"
+                run: "uv build --all-packages"

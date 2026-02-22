@@ -7,6 +7,8 @@ test:
 .PHONY: build
 build:
 	$(foreach pkg, $(package_names), ~/.local/bin/uv build $(pkg))
+	# Another option:
+	# ~/.local/bin/uv build --all-packages
 
 #.PHONY: types
 #types:
