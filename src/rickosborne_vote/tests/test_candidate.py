@@ -1,4 +1,4 @@
-from rickosborne_vote.candidate import keyed_candidate_asc
+from ..candidate import keyed_candidate_asc
 
 
 def test_text():

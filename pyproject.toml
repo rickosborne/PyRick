@@ -5,7 +5,8 @@ quote-style = "double"
 rickosborne_vote = { workspace = true }
 
 [tool.uv.workspace]
-members = ["packages/*"]
+members = ["src/*"]
+exclude = ["*.egg-info"]
 
 [dependency-groups]
 dev = [

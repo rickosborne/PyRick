@@ -1,0 +1,6 @@
+include *.py
+include py.typed
+exclude Manifest.in
+global-exclude *.egg-info
+global-exclude test_*.py
+global-exclude tests/*.py

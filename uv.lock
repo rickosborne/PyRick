@@ -160,7 +160,7 @@ wheels = [
 
 [[package]]
 name = "rickosborne-vote"
-source = { editable = "packages/rickosborne_vote" }
+source = { editable = "src/rickosborne_vote" }
 
 [[package]]
 name = "ruff"

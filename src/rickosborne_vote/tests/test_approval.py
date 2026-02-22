@@ -1,4 +1,4 @@
-from rickosborne_vote.approval import ApprovalResult, ApprovalResultOutcome, approval
+from ..approval import ApprovalResult, ApprovalResultOutcome, approval
 
 
 def test_empty():

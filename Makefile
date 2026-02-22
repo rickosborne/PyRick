@@ -1,8 +1,8 @@
-package_names := $(shell find packages -type d -depth 1 -name rickosborne*)
+package_names := $(shell find src -type d -depth 1 -name 'rickosborne*' -not -name '*.egg-info')
 
 .PHONY: test
 test:
-	@.venv/bin/python -m pytest packages
+	@.venv/bin/python -m pytest
 
 .PHONY: build
 build:
@@ -15,8 +15,9 @@ build:
 .PHONY: clean
 clean:
 	rm -Rf ./dist \
-		./packages/rickosborne_vote/src/rickosborne_vote.egg-info \
-		./scripts/rickosborne_scripts.egg-info
+		./src/rickosborne_vote/*.egg-info \
+		./scripts/*.egg-info \
+		./*.egg-info
 
 .PHONY: version-bump
 version-bump:

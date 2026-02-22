@@ -21,5 +21,8 @@ source = "vcs"
 
 [tool.setuptools_scm]
 search_parent_directories = true
-version_file = "src/rickosborne_vote/__version__.py"
+version_file = "__version__.py"
 version_scheme = "only-version"
+
+[tool.setuptools.packages]
+find = { namespaces = false }
