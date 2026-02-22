@@ -10,3 +10,16 @@ dependencies = []
 [project.urls]
 Homepage = "https://github.com/rickosborne/PyRick"
 Repository = "https://github.com/rickosborne/PyRick.git"
+
+[build-system]
+requires = ["setuptools==82.0.0", "setuptools-scm==9.2.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.hatch.version]
+source = "vcs"
+# fallback-version = "0.0.0"
+
+[tool.setuptools_scm]
+search_parent_directories = true
+version_file = "src/rickosborne_vote/__version__.py"
+version_scheme = "only-version"
