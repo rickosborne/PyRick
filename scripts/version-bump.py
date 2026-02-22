@@ -10,9 +10,8 @@ today_semver = Version(today.year, today.month, today.day)
 
 toml_for_path = dict[str, dict[str, object]]()
 
-
-with open(version_file, "r", encoding="utf-8") as input:
-    line = input.readline().strip()
+with open(version_file, "r", encoding="utf-8") as version_in:
+    line = version_in.readline().strip()
     print(f"Version file: {line}")
 
 print(f"Today: v{today_semver}")
